@@ -82,7 +82,7 @@ h2:after{
     background-color: #e67e22;
     content:" ";
     width: 100px;
-    margin: 0 auto;
+    margin: 0 auto; /* centreren van alinea */
     margin-top: 30px;
 }
 
@@ -129,7 +129,8 @@ h2:after{
 /* ---------- LINKS ---------- */ 
 
 a:link,
-a:active {
+a:active
+{
     color: #e67e22;
     text-decoration: none;
     padding-bottom: 1px;
@@ -148,7 +149,9 @@ a:visited {
 /* ---------- BUTTONS ---------- */ 
 
 .btn:link, 
-.btn:visited {
+.btn:visited,
+input[type=submit]
+{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -159,7 +162,8 @@ a:visited {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit]{
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -173,13 +177,18 @@ a:visited {
 }
 
 .btn:hover, 
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+{
     background-color: #a15512;
     
 }
 
 .btn-full:hover, 
-.btn-full:active {
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     border: 1px solid #a15512;
 }
 
@@ -227,7 +236,8 @@ header {
 }
 
 .main-nav li a:link,
-.main-nav li a:visited {
+.main-nav li a:visited
+{
     padding: 8px 0;
     color: #fff;
     text-decoration: none;
@@ -238,7 +248,8 @@ header {
 }
 
 .main-nav li a:hover,
-.main-nav li a:active {
+.main-nav li a:active
+{
    border-bottom: 2px solid #e67e22;
 }
 
@@ -412,6 +423,177 @@ cite img {
 .section-plans {
 	background-color: #f4f4f4;
 }
-.section-plans ul {
-    list-style-type: none;
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 10px;
+
+    /* box centreren: gebruik 90% van de breedte voor de box, blijft 10% over ==> 5% marge links (blijft 5 % marge over rechts)
+    ander voorbeeld, indien widht = 80% ==> margin = 10% */
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef; /*box schadow */
+    
+    
 }
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;  /*box schadow */
+    border-top-right-radius: 5px; /*box schadow */
+}
+
+.plan-box div:last-child {
+    text-align: center;     /* center button */
+    border-bottom: none;    /* no border under the button */
+}
+
+
+.plan-price {
+    font-size: 300%; /* large amount */ 
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #e67e22;
+    }
+
+.plan-price span {
+    font-size: 30%; /* small text 'per meal'*/
+    font-weight: 300;
+}
+
+    
+.plan-price-meal {
+    font-size: 80%;
+    margin-bottom: 10px;
+/*  min-height: 30px; alternatief voor &nbsp -als lege regel*/
+    
+}
+    
+.plan-box ul,
+.footer ul {
+    list-style: none;
+}
+
+.plan-box li {
+    padding 5px 0;
+}
+
+
+/*--------------------------------------------------------*/ 
+/* CONTACT FORM */ 
+/*--------------------------------------------------------*/ 
+
+.contact-form {
+    width: 60%; 
+    margin: 0 auto;  /* centreren van formulier */
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none /* element does not get border when it gets the focus*/ 
+}
+
+/*--------------------------------------------------------*/ 
+/* FOOTER  */ 
+/*--------------------------------------------------------*/ 
+
+.footer {
+    background-color: #333;
+    font-size: 80%;
+
+}
+
+.footer .row:first-of-type {
+    margin-top: -60px;   
+    margin-bottom: 60px;
+    
+    
+}
+
+.footer li{
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-nav li {
+    float: left;
+    margin-right: 40px;
+}
+
+.social-links li {
+    float: right;
+    margin-left: 40px;
+    font-size: 150%;
+}
+
+.footer-nav li a:link, 
+.footer-nav li a:visited,
+.social-links li a:link, 
+.social-links li a:visited {
+    color: #888;
+    text-decoration: none;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.footer-nav li a:hover, 
+.footer-nav li a:active{
+    color: #ddd;
+}
+
+
+.footer-text {
+    text-align: center;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover {
+    color:#3b5998;
+}
+.ion-logo-twitter:hover  {
+     color:#55acee;
+}
+.ion-logo-googleplus:hover {
+    color:#dd4b39;    
+}
+.ion-logo-instagram:hover {
+    color:#e95950;
+}
+
+/*
+
+
+
+
+
+    
+*/

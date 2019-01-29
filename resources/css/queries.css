@@ -1,0 +1,26 @@
+/* Big tablet to 1200 px (width smaller than the 1140px row defined in style.css*/
+@media only screen and (max-width: 1200) {
+
+
+}
+
+/* Small tablet to big table = in landscape mode: from 768 to 1023 px */
+@media only screen and (max-width: 1023) {
+
+
+}
+
+/* Small phones to small tablets: from 481 to 767 px */
+@media only screen and (max-width: 767) {
+
+
+}
+
+
+/* Small phones: from 0 to 480 px*/
+@media only screen and (max-width: 480px) {
+    
+    
+}
+
+
