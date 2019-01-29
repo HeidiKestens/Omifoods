@@ -481,7 +481,7 @@ cite img {
 }
 
 .plan-box li {
-    padding 5px 0;
+    padding: 5px 0;
 }
 
 
@@ -499,7 +499,7 @@ input[type=email],
 select,
 textarea {
     width: 100%;
-    padding 7px;
+    padding: 7px;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
