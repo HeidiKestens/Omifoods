@@ -20,6 +20,7 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/logo-white.png" alt="omnifood logo" class="logo">
+                    <img src="resources/img/logo.png" alt="omnifood logo" class="logo-black">
                     <ul class="main-nav">
                         <li><a href="#">Food delivery</a></li>
                         <li><a href="#">How it works</a></li>
@@ -30,13 +31,13 @@
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-                <a class="btn btn-full" href="#">I’m hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
             </div>
         
         </header>
      
-        <section class="section-features">
+        <section class="section-features js--section-features">
             <div class="row">
                
                 <h2>Get food fast &mdash; not fast food</h2>
@@ -154,7 +155,7 @@
                             <p><i class="icon ion-ios-star icon-small"></i>
                             60+ top chefs</p>
                             <p><i class="icon ion-logo-twitter icon-small"></i>
-                            </ion-icon><a href="#">@omnifood_lx</a></p>
+                            <a href="#">@omnifood_lx</a></p>
                         </div>    
                     </div>
                     
@@ -188,16 +189,14 @@
                         <img src="resources/img/london.jpg" alt="London">
                         <h3>London</h3>
                         <div class="city-feature">
-                            <p><i class="icon ion-ios-restaurant icon-small"></i>
-                            1200+ happy eaters</p>
-                            <p><i class="icon ion-ios-star icon-small"></i>
-                            50+ top chefs</p>
+                            <p><i class="icon ion-ios-restaurant icon-small"></i>1200+ happy eaters</p>
+                            <p><i class="icon ion-ios-star icon-small"></i>50+ top chefs</p>
                             <p><i class="icon ion-logo-twitter icon-small"></i><a href="#">@omnifood_london</a></p>
                         </div>    
                     </div>
-                 </div>
-            </div>
-        </section> 
+                </div>  
+            </div>  
+        </section>        
         
         <section class="class-testimonials">
             <div class="row">
@@ -223,11 +222,10 @@
                         <cite><img src="resources/img/customer-3.jpg">Milton Chapman</cite>
                     </blockquote>                    
                 </div>                
-            
             </div>
         </section>
 
-        <section class="section-plans">
+        <section class="section-plans js--section-plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
@@ -306,11 +304,7 @@
 			</div>
         </section>
         
-        <section>
-
-
-
-        </section class="section-contactform">
+        <section class="section-contactform">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>          
@@ -378,6 +372,7 @@
                 </form> 
             </div>
         </section>
+
         <section class="footer">
             <div class="row">
                 <div class="col span-1-of-2 footer-nav">
@@ -403,5 +398,14 @@
 
             </div>
         </section>
-    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+
+</body>
+
 </html>
