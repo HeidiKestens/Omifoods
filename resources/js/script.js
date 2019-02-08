@@ -10,7 +10,7 @@ $(document).ready(function()
     }, {
       offset: '60px;'
     });
-    
+     
     
     /* Scroll on buttons */
     /* Scrolls to a section with an animation with 1000 miliseconds = 1 second */
@@ -24,7 +24,8 @@ $(document).ready(function()
     });
     
     
-    /* Navigation scroll */
+    /* Navigation scroll (smooth scrolling) */
+    
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -41,30 +42,34 @@ $(document).ready(function()
     });
     
     
-    /* Animations on scroll */
+    /* Animations on scroll ==> Animate CSS (daneden.github.io/animate.css */
+    /* adds animated class to the element*/
+    
+     /* ----js--wp-1 - start - get food fast  ----*/  
     $('.js--wp-1').waypoint(function(direction) {
         $('.js--wp-1').addClass('animated fadeIn');
     }, {
         offset: '50%'
     });
-    
+    /* ----js--wp-2 how it works ----*/  
     $('.js--wp-2').waypoint(function(direction) {
         $('.js--wp-2').addClass('animated fadeInUp');
     }, {
         offset: '50%'
     });
-    
+    /* ----js--wp-3 - cities ----*/ 
     $('.js--wp-3').waypoint(function(direction) {
         $('.js--wp-3').addClass('animated fadeIn');
     }, {
         offset: '50%'
     });
-    
-    $('.js--wp-4').waypoint(function(direction) {
+     /* ----js--wp-4 - prices ----*/  
+        $('.js--wp-4').waypoint(function(direction) {
         $('.js--wp-4').addClass('animated pulse');
     }, {
         offset: '50%'
     });
+
     
     
     /* Mobile navigation */

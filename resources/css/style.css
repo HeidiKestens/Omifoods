@@ -277,11 +277,11 @@ header {
     width: 100%;
     background: rgb(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px #efefef; 
-    z-index: 999; /* defines vertical stacking of elements is always on top*/
+    z-index: 9999; /* defines vertical stacking of elements, can be negative, the higher, the more on top, 9999 is always on top*/
 }
 
 .sticky .main-nav li a:link,
-.stikcy .main-nav li a:visited
+.sticky .main-nav li a:visited
 {
     padding: 15px 0;
     color: #555;
@@ -511,7 +511,7 @@ cite img {
     }
 
 .plan-price span {
-    font-size: 30%; /* small text 'per meal'*/
+    font-size: 200%; /* small text 'per meal'*/
     font-weight: 300;
 }
 
@@ -638,11 +638,25 @@ input[type=checkbox] {
     color:#e95950;
 }
 
+/*--------------------------------------------------------*/ 
+/* ANIMATIONS  */ 
+/*--------------------------------------------------------*/ 
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {opacity: 0;}/* makes the element totally transparant*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3, 
+.js--wp-4 {-webkit-animation-duration: 3s;animation-duration: 3s;}
+
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {opacity: 1;}  /* makes the element visible */
+
 /*
-
-
-
-
-
+SOME REMARKS
     
 */

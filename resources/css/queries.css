@@ -30,7 +30,7 @@
         margin-left: 0%;
     }
     .plan-price {font-size: 200%;}
-    .plan-price span {font-size: 15%;}
+    .plan-price span {font-size: 50%;}
     .plan-box li {font-size: 90%;}
 
 }
@@ -46,7 +46,7 @@
     .steps-box:first-child {text-align: center;}
     .app-screen {width: 40%;}
     .plan-price {font-size: 150%;}
-    .plan-price span {font-size: 25%;}
+    .plan-price span {font-size: 40%;}
     .plan-box li {font-size: 90%;}
     .planbox .btn {font-size: 60%;}
 }

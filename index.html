@@ -22,28 +22,28 @@
                     <img src="resources/img/logo-white.png" alt="omnifood logo" class="logo">
                     <img src="resources/img/logo.png" alt="omnifood logo" class="logo-black">
                     <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our cities</a></li>
-                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#features">Food delivery</a></li>
+                        <li><a href="#steps">How it works</a></li>
+                        <li><a href="#cities">Our cities</a></li>
+                        <li><a href="#plans">Sign up</a></li>
                    </ul>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-                <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
-                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+                <a class="btn btn-full js--scroll-to-plans" href="#plans">I’m hungry</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#features">Show me more</a>
             </div>
         
         </header>
      
-        <section class="section-features js--section-features">
+        <section class="section-features js--section-features" id="features">
             <div class="row">
                
                 <h2>Get food fast &mdash; not fast food</h2>
                 <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
             </div>
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <i class="icon ion-ios-infinite icon-big"></i>
                     <h3>Up to 365 days/year</h3>
@@ -67,7 +67,7 @@
             </div>                 
         </section>
         
-        <section class="section-meals">
+        <section class="section-meals" id="meals">
             <ul class="meals-showcase clearfix">
                 <li>
                     <figure class="meal-photo">
@@ -114,12 +114,12 @@
             </ul>
         </section>
 
-        <section class="section-steps">
+        <section class="section-steps" id="steps">
             <div class="row">
                 <h2>How it works - Simple as 1, 2, 3</h2>
             </div>
             <div class="row">
-                <div class="col span-1-of-2 steps-box">
+                <div class="col span-1-of-2 steps-box js--wp-2">
                     <img src="resources/img/app-iPhone.png" alt="Omnifood app on Iphone" class="app-screen">
                 </div>
                 <div class="col span-1-of-2 steps-box">
@@ -142,8 +142,8 @@
             </div>
         </section>
         
-        <section class="section-cities">
-            <div class="row">
+        <section class="section-cities" id="cities">
+            <div class="row js--wp-3">
                 <h2>We're currently in these cities</h2>
                 <div class="row">
                     <div class="col span-1-of-4 box">
@@ -198,7 +198,7 @@
             </div>  
         </section>        
         
-        <section class="class-testimonials">
+        <section class="class-testimonials" id="testimonials">
             <div class="row">
                 <h2>Our customers can't live without us</h2>
             </div>
@@ -225,7 +225,7 @@
             </div>
         </section>
 
-        <section class="section-plans js--section-plans">
+        <section class="section-plans js--section-plans" id="plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
@@ -234,7 +234,7 @@
 					<div class="plan-box">
 						<div>
 							<h3>Premium</h3>
-							<p class="plan-price">399$ per month</p>
+							<p class="plan-price">399$<span> per month</span></p>
 							<p class="plan-price-meal">That’s only 13.30$ per meal</p>
 						</div>
 
@@ -256,7 +256,7 @@
 					<div class="plan-box">
 						<div>
 							<h3>Pro</h3>
-							<p class="plan-price">149$ per month</p>
+							<p class="plan-price">149$<span> per month</span></p>
 							<p class="plan-price-meal">That’s only 14.90$ per meal</p>
 						</div>
 
@@ -280,7 +280,7 @@
 					<div class="plan-box">
 						<div>
 							<h3>Starter</h3>
-							<p class="plan-price">19$ per meal</p>
+							<p class="plan-price">19$<span> per meal</span></p>
 							<p class="plan-price-meal">&nbsp;</p>
 						</div>
 
@@ -304,7 +304,7 @@
 			</div>
         </section>
         
-        <section class="section-contactform">
+        <section class="section-contactform" id="contactform">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>          
@@ -404,6 +404,7 @@
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/css/animate.css"></script>    
     <script src="resources/js/script.js"></script>
 
 </body>
