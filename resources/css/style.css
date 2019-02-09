@@ -206,8 +206,8 @@ input[type=submit]:active {
 /*--------------------------------------------------------*/ 
 
 header {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url(img/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -280,22 +280,46 @@ header {
     z-index: 9999; /* defines vertical stacking of elements, can be negative, the higher, the more on top, 9999 is always on top*/
 }
 
-.sticky .main-nav li a:link,
-.sticky .main-nav li a:visited
-{
-    padding: 15px 0;
-    color: #555;
+.sticky .main-nav {
+    margin-top: 18px;
+    float:right;
+    list-style: none;
+    margin-top: 15px;
 }
 
-.sticky .main-nav {margin-top: 18px;}
 
 .sticky .logo {display: none;}
 .sticky .logo-black {display: block;}
 
-.sticky .main-nav {
-    float:right;
-    list-style: none;
-    margin-top: 15px;
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 15px 0;
+    color: #555;
+}
+
+
+
+/* mobile navigation */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* Sticky mobile navigation */
+.sticky .mobile-nav-icon i {
+    color: #555;
+    margin-top: 10px;
+}
+
+.sticky .mobile-nav-icon {
+    margin-top: 10px;
 }
 /*--------------------------------------------------------*/ 
 /* FEATURES */ 
@@ -420,8 +444,8 @@ header {
 /*--------------------------------------------------------*/ 
 
 .class-testimonials{
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))), url(img/back-customers-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
     background-size: cover;
     color: white;
     /* achtergrond blijft vast en tekst beweegt over de afbeeding */
@@ -511,7 +535,7 @@ cite img {
     }
 
 .plan-price span {
-    font-size: 200%; /* small text 'per meal'*/
+    font-size: 30%; /* small text 'per meal'*/
     font-weight: 300;
 }
 

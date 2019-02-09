@@ -77,14 +77,16 @@ $(document).ready(function()
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
         
-        nav.slideToggle(200);
+        /* triggers the menu to open and close */ 
+        nav.slideToggle(200); 
         
-        if (icon.hasClass('ion-navicon-round')) {
-            icon.addClass('ion-close-round');
-            icon.removeClass('ion-navicon-round');
+        /* changes the icon on click */ 
+        if (icon.hasClass('ion-ios-menu')) {
+            icon.addClass('ion-ios-close');
+            icon.removeClass('ion-ios-menu');
         } else {
-            icon.addClass('ion-navicon-round');
-            icon.removeClass('ion-close-round');
+            icon.addClass('ion-ios-menu');
+            icon.removeClass('ion-ios-close');
         }        
     });
 })
